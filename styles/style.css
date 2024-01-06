@@ -98,6 +98,9 @@
 
 .theme-menu__button {
   position: relative;
+  font-weight: var(--main-text-weight);
+  font-size: 14px;
+  text-transform: uppercase;
   transition: opacity 0.3s ease;
   cursor: pointer;
   appearance: none;
@@ -118,12 +121,6 @@
   animation: arrow-moving 0.5s infinite alternate ease-in-out;
   inset-block-start: 0px;
   inset-inline-start: -18px;
-}
-
-.theme-menu__button {
-  font-weight: var(--main-text-weight);
-  font-size: 14px;
-  text-transform: uppercase;
 }
 
 .main__article {
