@@ -5,8 +5,9 @@
   --button-text-color: #fff;
   --heart-contour-color: #000;
   --heart-sparks-color: #ff0000;
-  --main-font: "Inter-Variable";
-  --accent-font: "PressStart2P";
+  --heart-core_body-init-color: transparent;
+  --main-font: "Inter", Roboto, sans-serif;
+  --accent-font: "PressStart2P", fantasy, serif;
   --main-background-picture: repeating-linear-gradient(
       #d3d3d3,
       #d3d3d3 2px,
@@ -24,4 +25,8 @@
   --main-text-weight: 400;
   --main-title-weight: 700;
   --floppy-size: 21;
+}
+
+::backdrop {
+  --backdrop-menu-color-rgb: 0, 0, 0, 0.75;
 }
