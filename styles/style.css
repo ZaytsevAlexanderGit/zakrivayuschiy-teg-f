@@ -251,22 +251,22 @@
   transition: fill 0.3s linear;
 }
 
-.card__icon-button:hover .core {
+.like-icon:hover .core {
   fill: var(--heart-contour-color);
   transition: fill 0.3s linear;
 }
 
-.card__icon-button:hover .main-body {
+.like-icon:hover .main-body {
   fill: var(--heart-contour-color);
   transition: fill 0.3s 0.05s linear;
 }
 
-.card__icon-button:active .core {
+.like-icon:active .core {
   fill: var(--heart-sparks-color);
   transition: fill 0.3s linear;
 }
 
-.card__icon-button:active .main-body {
+.like-icon:active .main-body {
   fill: var(--heart-sparks-color);
   transition: fill 0.3s 0.05s linear;
 }
@@ -413,7 +413,7 @@
 }
 
 .footer__dialog::backdrop {
-  background-color: rgba(var(--backdrop-menu-color-rgb));
+  background-color: var(--backdrop-menu-color);
 }
 
 .footer__dialog-button-text {
@@ -426,7 +426,7 @@
     inline-size: 100%;
   }
 
-  .header__main-title {
+  .header__decoration {
     font-size: clamp(2.6875rem, 0.5057rem + 10.9091vw, 3.0625rem);
   }
 

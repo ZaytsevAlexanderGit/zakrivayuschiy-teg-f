@@ -1,13 +1,21 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
-:root {
+
+/* При необходимости использовать переменную для backdrop приходится добавлять
+отдельно ЖЖbackdrop, иначе не наследуются переменные(у меня в Chrome по крайней мере,
+ в Firefox работает).
+https://stackoverflow.com/questions/58818299/css-variables-not-working-in-dialogbackdrop
+Можно просто цвет указать в style.css ) */
+:root,
+::backdrop {
   --bg-color: #fff;
   --accent-color: #000;
   --button-text-color: #fff;
   --heart-contour-color: #000;
   --heart-sparks-color: #ff0000;
+  --backdrop-menu-color: rgba(0, 0, 0, 0.75);
   --heart-core_body-init-color: transparent;
   --main-font: "Inter", Roboto, sans-serif;
-  --accent-font: "PressStart2P", fantasy, serif;
+  --accent-font: "PressStart2P", fantasy;
   --main-background-picture: repeating-linear-gradient(
       #d3d3d3,
       #d3d3d3 2px,
@@ -25,8 +33,4 @@
   --main-text-weight: 400;
   --main-title-weight: 700;
   --floppy-size: 21;
-}
-
-::backdrop {
-  --backdrop-menu-color-rgb: 0, 0, 0, 0.75;
 }
