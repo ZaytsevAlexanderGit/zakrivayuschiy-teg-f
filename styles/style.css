@@ -175,13 +175,12 @@
 }
 
 .filter__invert {
-  filter: invert(20%);
+  filter: invert  (20%);
 }
 
 .main__article-picture-label {
   position: absolute;
   opacity: 0.5;
-  color: var(--text-color);
   font-family: var(--accent-font);
   font-size: 14px;
   text-transform: uppercase;
@@ -422,6 +421,7 @@
 }
 
 @media (width < 376px) {
+  .header,
   .page__all-content {
     inline-size: 100%;
   }
